@@ -1,0 +1,19 @@
+/* src/index.css */
+@import 'tailwindcss';
+
+/* Define your Hub palette as design tokens */
+@theme {
+  /* brand */
+  --color-hub-cyan: #0ea5b7; /* tweak to taste */
+  --color-hub-cyan-light: color-mix(in oklab, var(--color-hub-cyan) 20%, white);
+  --color-hub-cyan-lighter: color-mix(
+    in oklab,
+    var(--color-hub-cyan) 10%,
+    white
+  );
+
+  /* (optional) typography, radii, etc. */
+  --font-sans: ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial,
+    'Apple Color Emoji', 'Segoe UI Emoji';
+  --radius-lg: 0.5rem;
+}
